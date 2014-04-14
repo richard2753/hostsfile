@@ -44,10 +44,10 @@ class Entry
       return nil if entries.nil? || entries.empty?
 
       return self.new(
-        :ip_address => entries[0],
-        :hostname   => entries[1],
-        :aliases    => entries[2..-1],
-        :comment    => comment,
+        :ip_address => entries[0]
+        :hostname   => entries[1]
+        :aliases    => entries[2..-1]
+        :comment    => comment
         :priority   => priority
       )
     end
